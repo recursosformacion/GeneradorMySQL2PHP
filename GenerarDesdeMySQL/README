@@ -26,3 +26,9 @@ To use:
 License
 =====================================
 table2class by Steven Flesch is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Revision realizada por Miguel Garcia (http://recursosformacion.com)
+Se añade fichero config, con alguna configuracio
+Se modifica generador de modelo para que trabaje con mi estructura
+Se añade un generador de Dao para que trabaje con mi estructura
+Se crea modulo de Funciones, con las funciones utilizadas en los modulos Daoclass y Tableclass
