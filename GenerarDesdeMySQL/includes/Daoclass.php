@@ -121,6 +121,9 @@ class DaoClass
 ********************************************************************************/\n\n";
         $sRet .= Funciones::getRequired($this->fDaoReq);
         $sRet .= "use PDOStatement;\n";
+        if (EXTEND_DAO != "")
+            $sRet .= "use " . Funciones::getNamespace(NAMESPACE_PRAL,NAMESPACE_DAO) . "\\". EXTEND_DAO . ";\n\n\n";
+            
         $sRet .= "// Begin Class \"$this->daoName\"\n";
         $sRet .= "class $this->daoName";
         if (EXTEND_DAO != "")

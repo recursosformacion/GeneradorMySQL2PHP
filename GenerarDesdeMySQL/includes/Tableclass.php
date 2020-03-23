@@ -93,6 +93,9 @@ class TableClass
 * Created by: table2class 
 ********************************************************************************/\n\n";
         $sRet .=  Funciones::getRequired($this->fModelReq);
+        if (EXTEND_MODEL != "")
+           $sRet .= "use " . Funciones::getNamespace(NAMESPACE_PRAL,NAMESPACE_MODELO) . "\\". EXTEND_MODEL . ";\n\n\n";
+        
         // $extend = "";
         // if (! empty($this->fModelReq)) {
         // foreach ($this->fModelReq as $file) {
