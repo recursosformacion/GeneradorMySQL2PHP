@@ -49,6 +49,8 @@ class Funciones
             return 'string';
         if (substr($tipo, 0, 3) == 'bit')
             return 'bool';
+        if (substr($tipo, 0, 4) == 'enum')
+                return 'string';
 
         return $tipo;
     }

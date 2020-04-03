@@ -8,5 +8,5 @@ define('RUTA_MODELOS', "/output/modelos/");
 define('RUTA_DAOS', "/output/dao/");
 define('NAMESPACE_PRAL', "App");
 define('NAMESPACE_DAO', "dao");
-define('NAMESPACE_MODELO', "modelo");
+define('NAMESPACE_MODELO', "modelos");
 
