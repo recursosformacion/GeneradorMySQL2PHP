@@ -1,20 +1,19 @@
 <?php
-namespace modelos;
-/*require_once (KIOSKO_RAIZ . 'service/RutinasXml.php');
-use service\RutinasXml;
- */
+namespace App\modelos;
+
+
 abstract Class  ModeloBase
 {
-    private $modelo;
+    private string $modelo;
 
     public function __construct(string $modelo){
         $this->setModelo($modelo);
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getModelo()
+    public function getModelo():string
     {
         return $this->modelo;
     }
@@ -22,18 +21,20 @@ abstract Class  ModeloBase
     /**
      * @param mixed $modelo
      */
-    public function setModelo($modelo)
+    public function setModelo(string $modelo):void
     {
         $this->modelo = $modelo;
     }
 
     public abstract function getId():int;
     public abstract function setId(int $id_valor):void;
+    public static abstract function getNombreId():string;
+    public static abstract function getNombreTabla():string;
 
-/*     public function getXml(): string
-    {
-        $miXML=RutinasXml::arrayToXML($this->getArray(), $this->getModelo());
-        return $miXML;
-    } */
+//     public function getXml(): string
+//     {
+//         $miXML=RutinasXml::arrayToXML($this->getArray(), $this->getModelo());
+//         return $miXML;
+//     }
 }
 
